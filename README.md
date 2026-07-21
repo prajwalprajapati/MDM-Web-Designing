@@ -1,6 +1,6 @@
 # 🚀 MDM Web Designing Practical Repository
 <p align="center">
-  <img src="./banner.png" alt="MDM Banner" width="100%"/>
+  <img src="./banner.jpg" alt="MDM Banner" width="100%"/>
 </p>
 
 <h1 align="center">🚀 MDM Web Designing Practical Repository</h1>
