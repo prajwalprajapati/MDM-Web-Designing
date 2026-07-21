@@ -1,12 +1,17 @@
 # 🚀 MDM Web Designing Practical Repository
-![MDM Banner](./banner.png)
-![HTML](https://img.shields.io/badge/HTML-5-orange)
-![CSS](https://img.shields.io/badge/CSS-3-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
-![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
-![Status](https://img.shields.io/badge/Status-Ongoing-blue)
-![Repository](https://img.shields.io/badge/Repository-Actively%20Maintained-success)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=github)](https://prajwalprajapati.github.io/MDM-Web-Designing/)
+<p align="center">
+  <img src="./banner.png" alt="MDM Banner" width="100%"/>
+</p>
+
+<h1 align="center">🚀 MDM Web Designing Practical Repository</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-5-orange"/>
+  <img src="https://img.shields.io/badge/CSS-3-blue"/>
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow"/>
+  <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC"/>
+  <img src="https://img.shields.io/badge/Status-Ongoing-blue"/>
+</p>
 
 A curated collection of my **MDM Web Designing laboratory practicals** demonstrating modern front-end development, responsive layouts, and Tailwind CSS implementation.
 
