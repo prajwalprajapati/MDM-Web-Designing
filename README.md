@@ -6,6 +6,7 @@
 ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
 ![Status](https://img.shields.io/badge/Status-Ongoing-blue)
 ![Repository](https://img.shields.io/badge/Repository-Actively%20Maintained-success)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=github)](https://prajwalprajapati.github.io/MDM-Web-Designing/)
 
 A curated collection of my **MDM Web Designing laboratory practicals** demonstrating modern front-end development, responsive layouts, and Tailwind CSS implementation.
 
