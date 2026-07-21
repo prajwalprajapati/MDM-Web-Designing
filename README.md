@@ -4,7 +4,8 @@
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Status](https://img.shields.io/badge/Status-Ongoing-blue)
+![Repository](https://img.shields.io/badge/Repository-Actively%20Maintained-success)
 
 A curated collection of my **MDM Web Designing laboratory practicals** demonstrating modern front-end development, responsive layouts, and Tailwind CSS implementation.
 
@@ -14,7 +15,6 @@ A curated collection of my **MDM Web Designing laboratory practicals** demonstra
 
 * **Course:** MDM Web Designing
 * **Program:** B.Tech Computer Science Engineering
-* **Institution:** College Practical Laboratory Work
 * **Student:** Prajwal Prajapati
 
 ---
@@ -33,6 +33,7 @@ A curated collection of my **MDM Web Designing laboratory practicals** demonstra
 
 ```text
 MDM-Web-Designing/
+├── Practical-1/
 ├── Practical-2/
 ├── Practical-3/
 ├── Practical-4/
@@ -46,7 +47,16 @@ MDM-Web-Designing/
 
 ## 🎯 Objective
 
-This repository contains all **8 practical assignments** completed during the MDM Web Designing course. Each practical focuses on different aspects of front-end web development, including layout design, styling, responsiveness, UI components, and modern web technologies.
+This repository is being continuously updated with all **8 MDM Web Designing practical assignments** and related project files. Each practical focuses on different aspects of front-end web development, including layout design, styling, responsiveness, UI components, and modern web technologies.
+
+---
+
+## 📈 Current Progress
+
+* Repository Created ✅
+* Practical Folders Created 🔄
+* Files Upload in Progress 🔄
+* Documentation Ongoing 🔄
 
 ---
 
@@ -57,4 +67,4 @@ B.Tech CSE Student | Front-End Web Development Enthusiast
 
 ---
 
-⭐ If you find this repository useful, feel free to explore the practical implementations and responsive UI projects.
+⭐ This repository is actively maintained as part of my academic coursework and web development learning journey.
