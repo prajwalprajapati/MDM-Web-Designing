@@ -1,4 +1,6 @@
 # 🚀 MDM Web Designing Practical Repository
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&size=28&pause=1000&color=2563EB&center=true&vCenter=true&width=1000&lines=MDM+Web+Designing+Practical+Repository;Responsive+Front-End+Projects;HTML+%7C+CSS+%7C+JavaScript+%7C+Tailwind+CSS;Actively+Maintained+Academic+Portfolio)
+
 <p align="center">
   <img src="./banner.jpg" alt="MDM Banner" width="100%"/>
 </p>
@@ -11,8 +13,14 @@
   <img src="https://img.shields.io/badge/JavaScript-ES6-yellow"/>
   <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC"/>
   <img src="https://img.shields.io/badge/Status-Ongoing-blue"/>
+  <img src="https://img.shields.io/badge/Repository-Actively%20Maintained-success"/>
 </p>
 
+<p align="center">
+  <a href="https://prajwalprajapati.github.io/MDM-Web-Designing/">
+    <img src="https://img.shields.io/badge/🌐_Live_Website-Visit_Now-success?style=for-the-badge"/>
+  </a>
+</p>
 A curated collection of my **MDM Web Designing laboratory practicals** demonstrating modern front-end development, responsive layouts, and Tailwind CSS implementation.
 
 ---
