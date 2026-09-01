@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical No.6</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex justify-center items-center bg-gradient-to-r from-blue-200 via-blue-400 to-indigo-600">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg">
+
+        <h1 class="text-3xl font-bold text-center">Practical No. 6</h1>
+        <h3 class="text-xl text-center mb-5">Marks Calculator</h3>
+
+        <table class="bg-slate-200 border border-blue-500 border-collapse" cellpadding="10">
+
+            <tr>
+                <th>#</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>AP</td>
+                <td><input type="number" id="s1" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>OOP</td>
+                <td><input type="number" id="s2" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>ED</td>
+                <td><input type="number" id="s3" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>CAO</td>
+                <td><input type="number" id="s4" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>DSA</td>
+                <td><input type="number" id="s5" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>CEP</td>
+                <td><input type="number" id="s6" placeholder="Enter Marks"></td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="text-center">
+                    <button
+                        onclick="calc()"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Calculate
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+        <h2 class="mt-5 font-bold">TOTAL MARKS</h2>
+        <h2 id="totalMarks">0</h2>
+
+        <h2 class="font-bold">PERCENTAGE</h2>
+        <h2 id="percentage">0%</h2>
+
+    </div>
+
+    <script>
+        function calc() {
+
+            let sub1 = Number(document.getElementById("s1").value);
+            let sub2 = Number(document.getElementById("s2").value);
+            let sub3 = Number(document.getElementById("s3").value);
+            let sub4 = Number(document.getElementById("s4").value);
+            let sub5 = Number(document.getElementById("s5").value);
+            let sub6 = Number(document.getElementById("s6").value);
+
+            let TOTAL = sub1 + sub2 + sub3 + sub4 + sub5 + sub6;
+
+            let per = TOTAL / 6;
+
+            document.getElementById("totalMarks").innerHTML = TOTAL;
+            document.getElementById("percentage").innerHTML = per.toFixed(2) + "%";
+        }
+    </script>
+
+</body>
+</html>
