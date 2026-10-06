@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal To-Do List</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4">
+
+  <!-- Main Container -->
+  <div class="w-full max-w-lg bg-white rounded-2xl shadow-xl p-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-6">
+      <h1 class="text-3xl font-bold text-slate-800">My Task List</h1>
+      <p class="text-sm text-slate-500 mt-1">
+        Organize your academic and personal tasks
+      </p>
+    </div>
+
+    <!-- Add Task -->
+    <div class="flex gap-2 mb-5">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a new task..."
+        class="flex-1 px-4 py-3 border border-slate-300 rounded-lg
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+
+      <button
+        id="addTaskBtn"
+        class="bg-blue-600 hover:bg-blue-700 text-white
+               font-semibold px-5 rounded-lg transition"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- Task Counter -->
+    <div class="flex justify-between items-center mb-3">
+      <h2 class="font-semibold text-slate-700">Tasks</h2>
+      <span
+        id="taskCount"
+        class="text-sm text-slate-500"
+      >
+        0 tasks
+      </span>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="space-y-3"></ul>
+
+    <!-- Empty Message -->
+    <p
+      id="emptyMessage"
+      class="text-center text-slate-400 py-6"
+    >
+      No tasks added yet.
+    </p>
+
+  </div>
+
+
+  <script>
+    // Select elements
+    const taskInput = document.getElementById("taskInput");
+    const addTaskBtn = document.getElementById("addTaskBtn");
+    const taskList = document.getElementById("taskList");
+    const taskCount = document.getElementById("taskCount");
+    const emptyMessage = document.getElementById("emptyMessage");
+
+
+    // Update task counter
+    function updateTaskCount() {
+      const count = taskList.children.length;
+
+      taskCount.textContent =
+        count === 1 ? "1 task" : `${count} tasks`;
+
+      emptyMessage.style.display =
+        count === 0 ? "block" : "none";
+    }
+
+
+    // Add new task
+    function addTask() {
+
+      const taskText = taskInput.value.trim();
+
+      // Prevent empty tasks
+      if (taskText === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+
+      // Create task item
+      const li = document.createElement("li");
+
+      li.className =
+        "flex items-center justify-between gap-3 p-3 " +
+        "bg-slate-50 border border-slate-200 rounded-lg";
+
+
+      // Left section
+      const contentDiv = document.createElement("div");
+
+      contentDiv.className =
+        "flex items-center gap-3 min-w-0";
+
+
+      // Checkbox
+      const checkbox = document.createElement("input");
+
+      checkbox.type = "checkbox";
+
+      checkbox.className =
+        "h-5 w-5 accent-blue-600 cursor-pointer";
+
+
+      // Task text
+      const textSpan = document.createElement("span");
+
+      textSpan.textContent = taskText;
+
+      textSpan.className =
+        "text-slate-700 font-medium break-words";
+
+
+      // Complete task
+      checkbox.addEventListener("change", function () {
+
+        textSpan.classList.toggle("line-through");
+        textSpan.classList.toggle("text-slate-400");
+
+      });
+
+
+      // Delete button
+      const deleteBtn = document.createElement("button");
+
+      deleteBtn.textContent = "Delete";
+
+      deleteBtn.className =
+        "bg-red-500 hover:bg-red-600 text-white " +
+        "text-sm px-3 py-1.5 rounded-md transition";
+
+
+      // Delete task
+      deleteBtn.addEventListener("click", function () {
+
+        li.remove();
+        updateTaskCount();
+
+      });
+
+
+      // Build task
+      contentDiv.appendChild(checkbox);
+      contentDiv.appendChild(textSpan);
+
+      li.appendChild(contentDiv);
+      li.appendChild(deleteBtn);
+
+      taskList.appendChild(li);
+
+
+      // Clear input
+      taskInput.value = "";
+      taskInput.focus();
+
+      updateTaskCount();
+    }
+
+
+    // Add button
+    addTaskBtn.addEventListener("click", addTask);
+
+
+    // Add task using Enter
+    taskInput.addEventListener("keydown", function (event) {
+
+      if (event.key === "Enter") {
+        addTask();
+      }
+
+    });
+
+
+    // Initial state
+    updateTaskCount();
+
+  </script>
+
+</body>
+</html>
